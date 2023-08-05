@@ -71,6 +71,10 @@ header {
     background-position:top; /* Adjust background image position */
   }
 
+  .header{
+    margin-top: 25vh;
+
+  }
   .heading,
   .heading + h3,
   .heading + h3 + p {
@@ -86,4 +90,5 @@ header {
   .heading + h3 + p {
     width:200px;
   }
+
 }
