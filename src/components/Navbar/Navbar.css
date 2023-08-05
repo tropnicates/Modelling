@@ -10,20 +10,10 @@
 }
 
 
-
-#logoImage {
-  transition: all 0.2s;
-  transform: translateX(-100%);
-}
-
-#logoImage:hover {
-  transform: translateX(0);
-}
-
 .navlinks {
   color: white;
   text-decoration: none;
-  margin: 1vmax 1.2vmax;
+  margin: 1vmax 1vmax;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
   font-size: 1.5vmax;
@@ -40,10 +30,7 @@
     align-items: flex-start;
   }
 
-  .logo {
-    margin-right: 0;
-    margin-bottom: 1vmax;
-  }
+  
 
 
 }
