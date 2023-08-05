@@ -31,7 +31,7 @@ const Navbar = () => {
       <a className="navlinks" href="https://portfoliowebsite-ljtv.onrender.com" rel="noreferrer" target="_blank">About</a>
 
       <div className="searchbox">
-        <input type="text" name="search" placeholder="Search Models" />
+        <input type="text" name="search"  />
         {searchIcon}
       </div>
     </div>

@@ -1,3 +1,4 @@
+/* Base styles for all screen sizes */
 .nav {
   z-index: 1000;
   padding: 1vmax;
@@ -8,19 +9,11 @@
   border-bottom: 1px solid rgba(43, 43, 43, 0.137);
 }
 
-.logo {
-  background-color: orangered;
-  width: 58px;
-  border-radius: 20px;
-  overflow: hidden;
-  cursor: pointer;
-  position: relative;
-  right: 2vmax;
-}
+
 
 #logoImage {
   transition: all 0.2s;
-  transform: translateX(-58px);
+  transform: translateX(-100%);
 }
 
 #logoImage:hover {
@@ -38,7 +31,6 @@
 
 .navlinks:hover {
   color: salmon;
-  text-decoration: none;
 }
 
 .searchbox {
@@ -49,14 +41,33 @@
 .searchbox > input {
   border: none;
   border-bottom: 1px solid rgba(128, 128, 128, 0.76);
-  width: 15vmax;
-  font-size: 1.4vmax;
+  width: 10vw; /* Updated: Use viewport width */
+  font-size: 1.4vw; /* Updated: Use viewport width */
   outline: none;
   color: rgb(61, 61, 61);
-  /* font-weight: 100; */
 }
 
 .searchbox > svg {
   fill: rgb(234, 219, 219);
-  align-items: center;
+}
+
+/* Media queries for responsiveness */
+
+/* For screens with a maximum width of 768 pixels (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-right: 0;
+    margin-bottom: 1vmax;
+  }
+
+  .searchbox {
+    position: relative;
+    left: 0;
+    margin-top: 2vmax;
+  }
 }
